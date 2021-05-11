@@ -1,0 +1,20 @@
+.gm-style-iw {
+  width: 200px !important;
+  box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+  border: 1px solid rgba(72, 181, 233, 0.6);
+  border-radius: 2px 2px 10px 10px;
+}
+
+.gm-style-iw-d {
+  overflow: unset !important;
+}
+
+button.gm-ui-hover-effect {
+  background-color: white !important;
+}
+
+.gm-style div div div div div div div div {
+  background-color: #252525 !important;
+  color: #fff;
+  font-size: 14px;
+}

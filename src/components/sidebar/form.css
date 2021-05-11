@@ -1,0 +1,96 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  background: #2e933c;
+}
+
+.form-h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  max-width: 10vw !important;
+}
+
+.form-label {
+  margin: 10px 0;
+  text-align: left;
+  width: 20%;
+  color: white;
+  font-size: 20px;
+}
+
+.form-input,
+.form-textarea {
+  display: block;
+  margin-top: 5px;
+  width: 300px;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 10px;
+  color: black;
+  font-size: 16px;
+}
+
+.form-submit {
+  justify-self: end;
+  font-size: 20px;
+}
+
+.searchResult {
+  border: 1px solid black;
+}
+
+.searchResult-list-item {
+  padding: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.searchResult-list-item:hover {
+  background-color: rgb(209, 207, 207);
+}
+
+@media screen and (min-width: 799px) {
+  .form {
+    display: grid;
+    grid-template-areas:
+      "header ."
+      "name message"
+      "tel message"
+      "email submit";
+    align-items: start;
+    align-content: space-between;
+    justify-content: unset;
+    gap: 0.5vw 1vw;
+    padding: 40px;
+  }
+
+  .form-h2 {
+    grid-area: header;
+    text-align: left;
+  }
+
+  .form-label {
+    margin: 0;
+  }
+
+  #source {
+    grid-area: source;
+  }
+  #destination {
+    grid-area: destination;
+  }
+
+  .form-textarea {
+    height: 150px;
+  }
+
+  .form-submit {
+    grid-area: submit;
+  }
+}
